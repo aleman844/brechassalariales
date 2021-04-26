@@ -141,7 +141,7 @@ donde $W_i$ es el ingreso mensual, $X_{i}'$ es un vector de características soc
 \begin{equation}
 log(S_{i})=X_{i}'\beta + \alpha PU_{i}+\varepsilon_{i}
 \end{equation}
-donde $S_i$ es el salario/hora. Una de las explicaciones a variación metodológica se encuentra en García \textit{et al.} (2014) que afirman que los profesores trabajan menos horas semanales que trabajadores de otras ocupaciones y profesiones seleccionadas. Se encontró una diferencia salarial del 15.99\% entre los docentes y las profesiones seleccionadas.\\
+donde $S_i$ es el salario/hora. Una de las explicaciones a esta variación metodológica se encuentra en García \textit{et al.} (2014) que afirman que los profesores trabajan menos horas semanales que trabajadores de otras ocupaciones y profesiones seleccionadas. Se encontró una diferencia salarial del 15,99\% entre los docentes y las profesiones seleccionadas.\\
 
 \textbf{Modelo 3:} La revisión bibliográfica nos permitió plantear un tercer modelo basado en la ecuación de Mincer. En particular, se optó por este tipo de modelo debido a que este enfoque surgió como una propuesta para analizar el perfil de ingresos de una persona a lo largo de su vida cuando solo se tienen datos de corte transversal (Galassi \& Andrada, 2009), como en el caso de la GEIH 2019. Este es el modelo
 
@@ -149,7 +149,7 @@ donde $S_i$ es el salario/hora. Una de las explicaciones a variación metodológ
 log(S_{i})=X_{i}'\beta + \alpha PU_{i}+\lambda_{1}Exp^{2}+\lambda_{2}Exp+\varepsilon_{i}
 \end{equation}
 
-En donde la variable $X_{i}'$ ya no incluye la experiencia. Con este modelo se encontró una diferencia salarial del 15.76\% entre los docentes y las profesiones seleccionadas.\\
+En donde la variable $X_{i}'$ ya no incluye la experiencia. Con este modelo se encontró una diferencia salarial del 15,76\% entre los docentes y las profesiones seleccionadas.\\
 
 \textbf{Modelo 4:} Dado que encontramos una brecha salarial muy parecida entre los modelos 2 y 3, se exploró una cuarta opción conservando el modelo 3, pero haciendo un ajuste en la muestra utilizando un algoritmo de comparación KNN. Este aplica una mejora a la selección de profesionales que consiste en obtener una distancia euclidiana entre las características de este grupo y el grupo de profesores. Esto permite seleccionar del grupo de profesionales a aquellos que tienen mayor afinidad en sus características con los docentes (esto es: años de escolaridad, experiencia en años y zona urbana o rural). Encontramos una diferencia salarial del 15,01\% entre los docentes y las profesiones seleccionadas.\\
 
@@ -162,10 +162,10 @@ El desempeño de los modelos se puede observar en el Cuadro 2, donde se calculan
 		\toprule
 		\textbf{Métricas de decisión} & \multicolumn{1}{l|}{\textbf{Modelo 1}} & \multicolumn{1}{l|}{\textbf{Modelo 2}} & \multicolumn{1}{l|}{\textbf{Modelo 3}} & \multicolumn{1}{l|}{\textbf{Modelo 4}} \\
 		\midrule
-		AIC   & 288195.6 & 280916.7 & 280294.1 & 4123.4 \\
-		$R^2$    & 0.1685 & 0.1846 & 0.1886 & 0.275 \\
-		$R^2$ ajustado & 0.1685 & 0.1846 & 0.1886 & 0.2731 \\
-		RMSD  & 14.4753 & 9.3713 & 9.3715 & 9.1811 \\
+		AIC   & 288195,6 & 280916,7 & 280294,1 & 4123,4 \\
+		$R^2$    & 0,1685 & 0,1846 & 0,1886 & 0,275 \\
+		$R^2$ ajustado & 0,1685 & 0,1846 & 0,1886 & 0,2731 \\
+		RMSD  & 14,4753 & 9,3713 & 9,3715 & 9,1811 \\
 		\bottomrule
 	\end{tabular}
 	\caption*{Fuente: Elaboración propia}
@@ -176,7 +176,7 @@ Es fácil notar que el Modelo 4 posee mejor rendimiento en todas la métricas us
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \section{Consideraciones finales}
-Primero, los coeficientes de los cuatro modelos que planteamos en nuestro ejercicio coinciden en reafirmar la brecha existente entre los salarios de los docentes y las profesiones seleccionadas, en contra de los profesores. Con los datos del GEIH 2019, nuestro modelo 1 incluso muestra una brecha mayor a la encontrada por García et al. (2014).
+Primero, los coeficientes de los cuatro modelos que planteamos en nuestro ejercicio coinciden en reafirmar la brecha existente entre los salarios de los docentes y las profesiones seleccionadas, en contra de los profesores. Con los datos de la GEIH 2019, nuestro modelo 1 incluso muestra una brecha mayor a la encontrada por García et al. (2014).
 
 Segundo, cuando los salarios se ajustaron por salario/hora, la brecha salarial pasó de 22\% a 15,99\%. Y una reducción parecida se encontró cuando se agregó el control experiencia, al pasar de 22\% a 15,76\%. Esto está relacionado con las menores horas semanales trabajadas por los docentes en comparación con los profesionales de las ramas seleccionadas.
 
